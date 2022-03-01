@@ -1,0 +1,64 @@
+body{
+    background-color: black;
+    color: wheat;
+    margin: auto;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 1000px;
+    text-align: justify;
+    justify-content: space-between;
+}
+nav{
+    flex: 0 0 100%;
+    background-color: teal;
+    border: 1px solid white;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: wheat;
+}
+nav li{
+    flex: auto;
+    
+}
+article{
+    flex: 0 0 calc(100% - 40% - 10px);
+    display: flex;
+    border: 1px solid white;
+}
+.bal{
+    flex: 0 0 20%;
+    border: 1px solid white;
+    
+}
+.jobb{
+    flex: 0 0 20%;
+    border: 1px solid white;
+    
+}
+article img{
+    width: 100%;
+}
+article .kepek{
+    flex: 0 0 33%;
+}
+
+@media (max-width: 700px){
+    main{
+        flex-direction: column-reverse;
+    }
+    article{
+        flex-direction: column;
+        order: 1;
+    }
+}
